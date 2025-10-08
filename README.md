@@ -2,6 +2,8 @@
 
 Workshop materials for demonstrating [CARTO's AI capabilities](https://carto.com/ai-agents) using MCP (Model Context Protocol) tools and Builder AI Agents to analyze the impact of NYC's 2025 traffic congestion regulation.
 
+
+
 ## Workshop Overview
 
 This hands-on workshop demonstrates how to leverage CARTO's geospatial AI tools to analyze real-world urban policy impacts. Participants will learn to:
@@ -26,6 +28,7 @@ The analysis compares data from three months before the regulation (October-Dece
 - Meet the instructors
 - Workshop objectives and outcomes
 - Overview of the NYC congestion regulation case study
+- [Checkout the slides!](https://docs.google.com/presentation/d/15CIlqaWUxRUKDWJmxWuvTUtxIoAmofDWgKlG7gvAB0E/edit?slide=id.g3386d626f30_0_10#slide=id.g3386d626f30_0_10)
 
 ### 2. Workflows as MCP Tools (25 minutes)
 Learn how to create geospatial analysis workflows in CARTO and expose them as MCP tools that can be used by any AI agent.
@@ -74,42 +77,27 @@ Discover how CARTO Builder's integrated AI agents provide a map-based interface 
 
 This workflow performs a comprehensive step-by-step analysis and runs asynchronously.
 
-1. In CARTO Workflows, create a new workflow
-2. Import the workflow definition from [`workflows/nyc_traffic_analysis_extended.sql`](workflows/nyc_traffic_analysis_extended.sql)
-3. Run the workflow
-4. Enable as MCP Tool
-
-![Extended Workflow Screenshot](workflows/nyc_traffic_analysis_extended.png)
+![Extended Workflow Screenshot](img/nyc_traffic_analysis_extended.png)
 
 **Key Features:**
 - Asynchronous execution with job tracking by using MCP tools `async_workflow_job_get_status_v1_0_0` and `async_workflow_job_get_results_v1_0_0` to poll for status and retrieve results
-
-#### Compact Analysis Workflow (Synchronous)
-
-A streamlined version optimized for speed, running synchronously for faster results.
-
-1. Create a new workflow in CARTO
-2. Import the workflow definition from [`workflows/nyc_traffic_analysis_compact.sql`](workflows/nyc_traffic_analysis_compact.sql)
-3. Run the workflow
-4. Enable as MCP Tool
-
-![Compact Workflow Screenshot](workflows/nyc_traffic_analysis_compact.png)
-
-**Key Features:**
-- Optimized for speed
-- Synchronous execution (returns results immediately)
-- Ideal for interactive demonstrations
 
 #### Area Generator Workflow
 
 Converts latitude/longitude coordinates to WKT polygon strings representing an area of influence.
 
-1. Create a new workflow in CARTO
-2. Import the workflow definition from [`workflows/create_area_from_coordinates.sql`](workflows/create_area_from_coordinates.sql)
-3. Run the workflow
-4. Enable as MCP Tool
+![Area Generator Screenshot](img/create_area_from_coordinates.png)
 
-![Area Generator Screenshot](workflows/create_area_from_coordinates.png)
+#### Compact Analysis Workflow (Synchronous)
+
+A streamlined version optimized for speed, running synchronously for faster results.
+
+![Compact Workflow Screenshot](img/nyc_traffic_analysis_compact.png)
+
+**Key Features:**
+- Optimized for speed
+- Synchronous execution (returns results immediately)
+- Ideal for interactive demonstrations
 
 ### Step 3: Expose Workflows as MCP Tools
 
@@ -123,7 +111,7 @@ For each workflow created:
    - **Parameters**: Define input and output parameters
 4. Enable as MCP tool
 
-![MCP Tool config gif](mcp_tool_config.gif)
+![MCP Tool config gif](img/mcp_tool_config.gif)
 
 ### Step 4: Configure CARTO MCP Server
 
@@ -152,9 +140,12 @@ $ gemini mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -
 $ claude mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -t http -H 'Authorizaton: Bearer <api_access_token>'
 ```
 
+* **Get your MCP Server URL:** In your CARTO Workspace, go to _Developers_ and find _Workflow API & MCP Server_
+* **Create an API Access Token with the MCP Tool grant:** Follow [this documentation](https://docs.carto.com/carto-mcp-server/carto-mcp-server#create-an-api-access-token).
+
 ### Step 5: Test with External AI Agents
 
-Try asking an AI agent (like Claude) questions such as:
+Once the CARTO MCP Server is configured and connected, try asking your AI agent questions such as:
 
 - "What was the effect of the congestion regulation around Broadway and East Houston Street in Manhattan?"
 - "Analyze traffic changes near Times Square after the January 2025 regulation"
