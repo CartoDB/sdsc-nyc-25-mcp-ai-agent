@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "carto-sdsc-demo": {
+      "httpUrl": "https://gcp-us-east1.api.carto.com/mcp/ac_8l15x5rr",
+      "headers": {
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhIjoiYWNfOGwxNXg1cnIiLCJqdGkiOiIxYjk4ZjBiZSJ9.dGTQpctPmYNCUG-RfDav3CKvZ387SFJJaaQ0hp-TjHU"
+      }
+    }
+  }
+}
