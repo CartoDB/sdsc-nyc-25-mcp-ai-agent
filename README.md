@@ -1,16 +1,16 @@
-# Geospatial AI Agents Workshop - NYC Traffic Congestion Analysis
+# Agentic GIS: Turning CARTO Workflows into MCP Tools
 
-Workshop materials for demonstrating [CARTO's AI capabilities](https://carto.com/ai-agents) using MCP (Model Context Protocol) tools and Builder AI Agents to analyze the impact of NYC's 2025 traffic congestion regulation.
+Workshop materials for demonstrating [Agentic GIS capabilities](https://carto.com/ai-agents) using MCP (Model Context Protocol) tools and CARTO AI Agents to analyze the impact of NYC's 2025 traffic congestion regulation.
 
 
 
 ## Workshop Overview
 
-This hands-on workshop demonstrates how to leverage CARTO's geospatial AI tools to analyze real-world urban policy impacts. Participants will learn to:
+This hands-on workshop demonstrates how to leverage CARTO's geospatial tools for Agents to analyze real-world urban policy impacts. Participants will learn to:
 
 - Create and deploy geospatial analysis workflows as MCP tools
 - Integrate CARTO MCP Server with external AI agents
-- Use CARTO Builder's native AI agents for interactive map-based analysis
+- Create CARTO AI agents providing them with workflows MCP tools
 
 ## Use Case
 
@@ -20,7 +20,7 @@ In January 2025, New York City introduced a congestion pricing regulation aimed 
 - **Traffic Accidents**: Collision frequency and severity
 - **Air Quality**: Pollution measurements in affected areas
 
-The analysis compares data from three months before the regulation (October-December 2024) with three months after (January-March 2025) for any user-defined area of interest in NYC.
+The analysis compares data from six months before the regulation (June-December 2024) with six months after (January-June 2025) for any user-defined area of interest in NYC.
 
 ## Workshop Structure
 
@@ -44,13 +44,14 @@ Learn how to create geospatial analysis workflows in CARTO and expose them as MC
 - Handling asynchronous operations
 - Performance optimization strategies
 
-### 3. Builder and the CARTO AI Agent (30 minutes)
-Discover how CARTO Builder's integrated AI agents provide a map-based interface for geospatial analysis.
+### 3. CARTO AI Agent (30 minutes)
+Discover how CARTO AI Agents provide a map-based interface for geospatial analysis.
 
 #### What You'll Learn:
-- Setting up an AI agent in Builder
-- Configuring agent access to MCP tools
-- Interactive map-based queries
+- Setting up a CARTO AI Agent
+- Providing agent access to MCP tools
+- Defining your Agent's logic
+- Testing and refining Agents
 - Visualizing analysis results
 
 ## Prerequisites
@@ -151,34 +152,119 @@ Once the CARTO MCP Server is configured and connected, try asking your AI agent 
 - "Analyze traffic changes near Times Square after the January 2025 regulation"
 - "Compare air quality before and after the regulation in the Financial District"
 
-### Step 6: Set Up Builder AI Agent
+### Step 6: Set Up CARTO AI Agent
 
-Navigate to AI Agents section and click on Create new AI Agent, then click on Create a Map
+Now that you've tested your MCP tools with external AI agents, let's create a CARTO AI Agent for an integrated map-based experience.
 
+#### Create a Map with Data Layers
 
+1. Create a new map in CARTO Builder
+2. Add the following NYC data sources:
+   - **Collisions**: NYC traffic collision data
+   - **Air Quality**: NYC air quality measurements
+   - **Congestion**: NYC traffic volume data
+3. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
 
-#### Add relevant NYC data layers 
+#### Create the AI Agent
 
-Collisions
+1. Navigate to the **AI Agent** tab in your map
+2. Click **Create an Agent**
+3. In the configuration panel, provide the **Use Case**:
+   ```
+   Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025).
+   Compare traffic volume, accidents, and air quality before (June-Dec 2024)
+   vs after (Jan-June 2025). Quantify changes in all three metrics and create
+   a data-driven narrative showing the regulation's spatial effects.
+   ```
+   *See [`agent/use-case.md`](agent/use-case.md)*
 
-Air Quality
+4. Click **Create an AI Agent**
 
-Congestion 
+#### Add Your Custom MCP Tools
 
-#### Navigate to the AI Agent configuration
+Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom MCP tools you created in Steps 2-3:
 
-Start defining the Use Case of your Agent, 
-   - 
-4. Navigate to the AI Agent configuration
-5. Enable the agent and grant access to your MCP tools
-6. Configure the agent's behavior and response style
-7. Test interactive queries directly in the map interface
+1. Click **Add tools** in the agent configuration
+2. Search for your MCP tools available in the organization
+3. Add these tools:
+   - `create_area_from_coordinates`
+   - `nyc_traffic_analysis_compact_version`
+4. Inspect each tool's metadata to verify:
+   - Tool description
+   - Input parameters
+   - Output definitions
+
+#### Configure Agent Instructions
+
+Define the analytical workflow and behavior for your agent:
+
+1. Navigate to the **Instructions** section
+2. Copy the content from [`agent/instructions.md`](agent/instructions.md)
+3. Paste into the agent configuration
+
+The instructions define:
+- Communication style (concise, data-focused)
+- Analytical workflow for different input scenarios (addresses, landmarks, coordinates, map regions)
+- How to present results with tables, emojis, and percentage changes
+- Handling missing or incomplete data
+
+*Note: Instructions support markdown and shortcuts to reference source fields and tools*
+
+#### Select the LLM Model
+
+1. Navigate to the **Model** section
+2. Select **Gemini 2.5 Pro** as the engine
+3. CARTO uses CARTO Managed Models by default
+4. Admins can configure custom models from:
+   - Google (Gemini)
+   - OpenAI
+   - Snowflake Cortex
+   - AWS Bedrock
+   - Anthropic
+   - Oracle
+   - Databricks
+
+#### Test Your Agent
+
+Test with queries similar to those from Step 5:
+
+- "Analyze traffic changes around the Empire State Building"
+- "What's the traffic impact in the area I've drawn?"
+- "Show me the congestion impact for the current map view"
+- "How did traffic patterns change in Times Square?"
+
+*See [`agent/test-prompts.md`](agent/test-prompts.md) for a comprehensive list of test queries*
+
+#### Finalize and Share
+
+1. **Add an Intro Message**:
+   ```
+   Hello! I am the NYC Congestion Pricing Impact Analyst. I can help you analyze
+   and compare traffic conditions, collisions, and air quality in New York City
+   before and after the congestion pricing program was implemented on January 5, 2025.
+   ```
+
+2. **Configure Conversation Starters** (4 suggested prompts to help users get started):
+   - "Analyze traffic changes around the Empire State Building"
+   - "What's the traffic impact in the area I've drawn?"
+   - "Show me the congestion impact for the current map view"
+   - "How did traffic patterns change in Times Square?"
+
+3. **Enable for Viewers**:
+   - Go to **Map Settings**
+   - Enable **AI Agent on Map** for viewers
+
+4. **Preview**: Test in **Preview mode** to see the end-user experience
+
+5. **Share**: Share the map with your team or stakeholders
+
+Your CARTO AI Agent is now ready! Users can interact with it directly on the map to analyze NYC's congestion pricing impact.
 
 ## Additional Resources
 
 - [CARTO Workflows as MCP Tools Documentation](https://docs.carto.com/carto-user-manual/workflows/workflows-as-mcp-tools)
 - [Model Context Protocol (MCP) Specification](https://modelcontextprotocol.io)
-- [CARTO Builder AI Agents Guide](https://docs.carto.com/carto-user-manual/ai-agents)
+- [CARTO AI Agents Guide](https://docs.carto.com/carto-user-manual/ai-agents)
 
 ## Support
 
