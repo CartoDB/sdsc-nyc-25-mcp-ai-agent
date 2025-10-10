@@ -153,12 +153,26 @@ Once the CARTO MCP Server is configured and connected, try asking your AI agent 
 
 ### Step 6: Set Up Builder AI Agent
 
-1. Open CARTO Builder and create a new map
-2. Add relevant NYC data layers (traffic, accidents, air quality)
-3. Navigate to the AI Agent configuration
-4. Enable the agent and grant access to your MCP tools
-5. Configure the agent's behavior and response style
-6. Test interactive queries directly in the map interface
+Navigate to AI Agents section and click on Create new AI Agent, then click on Create a Map
+
+
+
+#### Add relevant NYC data layers 
+
+Collisions
+
+Air Quality
+
+Congestion 
+
+#### Navigate to the AI Agent configuration
+
+Start defining the Use Case of your Agent, 
+   - 
+4. Navigate to the AI Agent configuration
+5. Enable the agent and grant access to your MCP tools
+6. Configure the agent's behavior and response style
+7. Test interactive queries directly in the map interface
 
 ## Additional Resources
 
