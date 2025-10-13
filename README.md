@@ -163,6 +163,7 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
    - **Collisions**: NYC traffic collision data
    - **Air Quality**: NYC air quality measurements
    - **Congestion**: NYC traffic volume data
+   - **NYC Congestion Zone**: NYC congestion pricing zone boundaries
 3. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
 
 ![Create Map for Agent](img/create_map_for_agent.png)
