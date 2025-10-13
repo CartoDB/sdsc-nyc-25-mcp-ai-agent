@@ -275,9 +275,14 @@ Go to **Map Settings** and enable **AI Agent on Map** for viewers so they can in
 
 **Preview and Share:**
 
-Test in **Preview mode** to see the end-user experience, then share the map with your team or stakeholders.
+Test in **Preview mode** to see the end-user experience.
 
 ![Agent Preview](img/agent_preview.png)
+
+Once you're happy with how the agent works, you can share the map:
+- **Specific users**: Share with individual team members
+- **Your organization**: Make it available to everyone in your CARTO organization
+- **Public**: Make the map publicly accessible
 
 Your CARTO AI Agent is now ready! Users can interact with it directly on the map to analyze NYC's congestion pricing impact.
 
