@@ -187,7 +187,7 @@ In your map, provide a title `Analyzing the impact of NYC Congestion Pricing Pro
 - **Congestion**: NYC traffic volume data
 - **NYC Congestion Zone**: NYC congestion pricing zone boundaries
 
-Style the layers as desired (e.g., by `carto_point_density` for better visualization)
+Style the layers as desired (e.g., style collisions by `carto_point_density` for better visualization)
 
 ![Add Data Sources and Style Layers](img/agent_add_source_style_layers.png)
 
