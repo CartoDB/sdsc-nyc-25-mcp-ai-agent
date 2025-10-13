@@ -134,11 +134,11 @@ Add the CARTO MCP Server to your AI agent's configuration to access the tools:
 ```
 **Gemini CLI**
 ```
-$ gemini mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -t http -H 'Authorizaton: Bearer <api_access_token>'
+$ gemini mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -t http -H 'Authorization: Bearer <api_access_token>'
 ```
 **Claude Code**
 ```
-$ claude mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -t http -H 'Authorizaton: Bearer <api_access_token>'
+$ claude mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -t http -H 'Authorization: Bearer <api_access_token>'
 ```
 
 * **Get your MCP Server URL:** In your CARTO Workspace, go to _Developers_ and find _Workflow API & MCP Server_
