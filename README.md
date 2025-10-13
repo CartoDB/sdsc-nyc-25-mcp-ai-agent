@@ -174,6 +174,8 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
    - **NYC Congestion Zone**: NYC congestion pricing zone boundaries
 2. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
 
+![Add Data Sources and Style Layers](img/agent_add_source_style_layers.png)
+
 #### Create the AI Agent
 
 1. Navigate to the **AI Agent** tab in your map
@@ -203,7 +205,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
    - Input parameters
    - Output definitions
 
-![AI Agent Configuration](img/ai_agent_configuration.png)
+![Agent Configuration](img/agent_configuration.png)
 
 #### Configure Agent Instructions
 
