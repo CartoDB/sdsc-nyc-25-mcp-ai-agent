@@ -235,7 +235,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
    - Input parameters
    - Output definitions
 
-![Agent Configuration with MCP Tools](img/agent_configuration.png)
+![Add MCP Tools to Agent](img/agent_add_mcp_tool.png)
 
 #### 3. Configure Agent Instructions
 
