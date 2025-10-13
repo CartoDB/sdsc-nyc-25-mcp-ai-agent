@@ -181,6 +181,8 @@ Style the layers as desired (e.g., by `carto_point_density` for better visualiza
 
 **3. Create and configure your AI Agent**
 
+The AI Agent configuration panel opens with several sections to configure:
+
 a) Navigate to the **AI Agent** tab in your map
 
 b) Click **Create an Agent**
