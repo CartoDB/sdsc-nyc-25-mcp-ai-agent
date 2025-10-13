@@ -267,6 +267,8 @@ Test with queries similar to those from Step 5:
 
 Your CARTO AI Agent is now ready! Users can interact with it directly on the map to analyze NYC's congestion pricing impact.
 
+![Agent Result Example](img/agent_result.png)
+
 ## Additional Resources
 
 - [CARTO Workflows as MCP Tools Documentation](https://docs.carto.com/carto-user-manual/workflows/workflows-as-mcp-tools)
