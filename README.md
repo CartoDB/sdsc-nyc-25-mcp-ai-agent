@@ -238,8 +238,6 @@ Define the analytical workflow and behavior for your agent:
 
 The instructions define communication style, analytical workflow for different input scenarios, how to present results, and handling missing data.
 
-*Note: Instructions support markdown and shortcuts to reference source fields and tools*
-
 ![Agent Instructions Configuration](img/agent_instructions.png)
 
 g) Once you're done, click on **Create Agent**
