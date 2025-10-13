@@ -156,7 +156,7 @@ Once the CARTO MCP Server is configured and connected, try asking your AI agent 
 
 Now that you've tested your MCP tools with external AI agents, let's create a CARTO AI Agent for an integrated map-based experience.
 
-#### Navigate to AI Agents and Create a New Map
+**1. Navigate to AI Agents and Create a New Map**
 
 1. Go to the **AI Agents** section in your CARTO workspace
    - This is where you'll see all AI Agents available in your CARTO organization
@@ -168,18 +168,19 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 
 ![Create Map for Agent](img/create_map_for_agent.png)
 
-#### Add Data Sources to Your Map
+**2. Add Data Sources to Your Map**
 
-1. Add the following NYC data sources to your map:
-   - **Collisions**: NYC traffic collision data
-   - **Air Quality**: NYC air quality measurements
-   - **Congestion**: NYC traffic volume data
-   - **NYC Congestion Zone**: NYC congestion pricing zone boundaries
-2. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
+Add the following NYC data sources to your map:
+- **Collisions**: NYC traffic collision data
+- **Air Quality**: NYC air quality measurements
+- **Congestion**: NYC traffic volume data
+- **NYC Congestion Zone**: NYC congestion pricing zone boundaries
+
+Style the layers as desired (e.g., by `carto_point_density` for better visualization)
 
 ![Add Data Sources and Style Layers](img/agent_add_source_style_layers.png)
 
-#### Configure the AI Agent
+**3. Create the AI Agent**
 
 1. Navigate to the **AI Agent** tab in your map
 2. Click **Create an Agent**
@@ -201,61 +202,47 @@ a data-driven narrative showing the regulation's spatial effects.
 
 ![Agent Use Case Configuration](img/agent_use_case.png)
 
-The AI Agent configuration panel opens with several sections to configure:
+**4. Configure the Agent**
 
-#### 1. Select the LLM Model
+The AI Agent configuration panel opens with several sections:
 
-Select the language model that will power your agent:
+**a) Select the LLM Model**
 
-1. Navigate to the **Model** section
-2. Select **Gemini 2.5 Pro** as the engine
-3. CARTO uses **CARTO Managed Models** by default for easy setup
-4. As an Admin, you can configure custom models from various providers:
-   - Google (Gemini)
-   - OpenAI
-   - Snowflake Cortex
-   - AWS Bedrock
-   - Anthropic
-   - Oracle
-   - Databricks
+- Navigate to the **Model** section
+- Select **Gemini 2.5 Pro** as the engine
+- CARTO uses **CARTO Managed Models** by default for easy setup
+- As an Admin, you can configure custom models from various providers (Google, OpenAI, Snowflake Cortex, AWS Bedrock, Anthropic, Oracle, Databricks)
 
 ![Agent Model Selection](img/agent_model.png)
 
-#### 2. Add Custom MCP Tools
+**b) Add Custom MCP Tools**
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
-1. Click **Add tools** in the agent configuration
-2. Search for your MCP tools available in the organization
-3. Add these tools:
-   - `create_area_from_coordinates`
-   - `nyc_traffic_analysis_compact_version`
-4. Inspect each tool's metadata to verify:
-   - Tool description
-   - Input parameters
-   - Output definitions
+- Click **Add tools** in the agent configuration
+- Search for your MCP tools available in the organization
+- Add these tools:
+  - `create_area_from_coordinates`
+  - `nyc_traffic_analysis_compact_version`
+- Inspect each tool's metadata (description, input parameters, output definitions)
 
 ![Add MCP Tools to Agent](img/agent_add_mcp_tool.png)
 
-#### 3. Configure Agent Instructions
+**c) Configure Agent Instructions**
 
-Finally, define the analytical workflow and behavior for your agent:
+Define the analytical workflow and behavior for your agent:
 
-1. Navigate to the **Instructions** section
-2. Copy the content from [`agent/instructions.md`](agent/instructions.md)
-3. Paste into the agent configuration
+- Navigate to the **Instructions** section
+- Copy the content from [`agent/instructions.md`](agent/instructions.md)
+- Paste into the agent configuration
 
-The instructions define:
-- Communication style (concise, data-focused)
-- Analytical workflow for different input scenarios (addresses, landmarks, coordinates, map regions)
-- How to present results with tables, emojis, and percentage changes
-- Handling missing or incomplete data
+The instructions define communication style, analytical workflow for different input scenarios, how to present results, and handling missing data.
 
 *Note: Instructions support markdown and shortcuts to reference source fields and tools*
 
 ![Agent Instructions Configuration](img/agent_instructions.png)
 
-#### Test Your Agent
+**5. Test Your Agent**
 
 Now you can start testing your agent in **Editor mode** before enabling it on Preview and publishing your map. Try queries like:
 
@@ -268,7 +255,7 @@ Now you can start testing your agent in **Editor mode** before enabling it on Pr
 
 ![Agent Testing](img/agent_testing.png)
 
-#### Finalize and Share
+**6. Finalize and Share**
 
 1. **Add an Intro Message**:
    ```
