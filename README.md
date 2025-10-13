@@ -166,7 +166,7 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 
 The first step is to enable CARTO AI in your organization. To do so navigate to `Settings > CARTO AI` and enable CARTO AI in your organization. 
 
-
+![Enable CARTO AI](img/agent_enable_carto_ai.png)
 
 **2. Navigate to AI Agents and Create a New Map**
 
