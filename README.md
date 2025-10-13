@@ -194,8 +194,6 @@ vs after (Jan-June 2025). Quantify changes in all three metrics and create
 a data-driven narrative showing the regulation's spatial effects.
 ```
 
-*See [`agent/use-case.md`](agent/use-case.md) for the complete use case text*
-
 4. Click **Create an AI Agent** to proceed with the configuration
 
 ![Agent Use Case Configuration](img/agent_use_case.png)
