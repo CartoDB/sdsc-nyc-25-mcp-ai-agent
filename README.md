@@ -268,8 +268,10 @@ Customize the greeting message and provide suggested prompts to guide users. Thi
 ![Agent Intro Message Configuration](img/agent_intro_message.png)
 
 **Enable for Viewers:**
-- Go to **Map Settings**
-- Enable **AI Agent on Map** for viewers
+
+Go to **Map Settings** and enable **AI Agent on Map** for viewers so they can interact with the agent.
+
+![Enable Agent for Viewers](img/agent_enable_to_viewers.png)
 
 **Preview and Share:**
 - Test in **Preview mode** to see the end-user experience
