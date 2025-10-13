@@ -161,6 +161,9 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 1. Go to the **AI Agents** section in your CARTO workspace
    - This is where you'll see all AI Agents available in your CARTO organization
 2. Click **Create AI Agent**
+
+![Agent Creation](img/agent_creation.png)
+
 3. Select **Create a new map** (since we don't have an existing map yet)
 
 ![Create Map for Agent](img/create_map_for_agent.png)
