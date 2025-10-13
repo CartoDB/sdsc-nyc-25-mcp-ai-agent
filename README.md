@@ -202,7 +202,7 @@ d) Click **Create an AI Agent** to proceed with the configuration
 
 ![Agent Use Case Configuration](img/agent_use_case.png)
 
-e) Select the right **model**
+e) Select the right **Model**
 
 - Navigate to the **Model** section
 - Select **Gemini 2.5 Pro** as the engine
