@@ -165,6 +165,8 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
    - **Congestion**: NYC traffic volume data
 3. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
 
+![Create Map for Agent](img/create_map_for_agent.png)
+
 #### Create the AI Agent
 
 1. Navigate to the **AI Agent** tab in your map
@@ -193,6 +195,8 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
    - Tool description
    - Input parameters
    - Output definitions
+
+![AI Agent Configuration](img/ai_agent_configuration.png)
 
 #### Configure Agent Instructions
 
@@ -249,6 +253,8 @@ Test with queries similar to those from Step 5:
    - "What's the traffic impact in the area I've drawn?"
    - "Show me the congestion impact for the current map view"
    - "How did traffic patterns change in Times Square?"
+
+![Agent Greeting and Conversation Starters](img/agent_greeting.png)
 
 3. **Enable for Viewers**:
    - Go to **Map Settings**
