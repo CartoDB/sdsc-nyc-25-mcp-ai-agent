@@ -205,11 +205,9 @@ c) Provide the **Use Case** that describes what your agent does:
 Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025). Compare traffic volume, accidents, and air quality before (June-Dec 2024) vs after (Jan-June 2025). Quantify changes in all three metrics and create a data-driven narrative showing the regulation's spatial effects.
 ```
 
-d) Click **Create an AI Agent** to proceed with the configuration
-
 ![Agent Use Case Configuration](img/agent_use_case.png)
 
-e) Select the right **Model**
+d) Select the right **Model**
 
 - Navigate to the **Model** section
 - Select **Gemini 2.5 Pro** as the engine
@@ -218,7 +216,7 @@ e) Select the right **Model**
 
 ![Agent Model Selection](img/agent_model.png)
 
-f) Add custom **MCP tools** to your Agent
+e) Add custom **MCP tools** to your Agent
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
@@ -231,7 +229,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
 
 ![Add MCP Tools to Agent](img/agent_add_mcp_tool.png)
 
-g) Provide **Instructions**
+f) Provide **Instructions**
 
 Define the analytical workflow and behavior for your agent:
 
@@ -244,6 +242,8 @@ The instructions define communication style, analytical workflow for different i
 *Note: Instructions support markdown and shortcuts to reference source fields and tools*
 
 ![Agent Instructions Configuration](img/agent_instructions.png)
+
+g) Once you're done, click on **Create Agent**
 
 **5. Test Your Agent**
 
