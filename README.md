@@ -257,28 +257,23 @@ Now you can start testing your agent in **Editor mode** before enabling it on Pr
 
 **6. Finalize and Share**
 
-1. **Add an Intro Message**:
-   ```
-   Hello! I am the NYC Congestion Pricing Impact Analyst. I can help you analyze
-   and compare traffic conditions, collisions, and air quality in New York City
-   before and after the congestion pricing program was implemented on January 5, 2025.
-   ```
+Open the **AI Agent Configuration** to customize the intro message and conversation starters that help users get started with your agent.
 
-2. **Configure Conversation Starters** (4 suggested prompts to help users get started):
-   - "Analyze traffic changes around the Empire State Building"
-   - "What's the traffic impact in the area I've drawn?"
-   - "Show me the congestion impact for the current map view"
-   - "How did traffic patterns change in Times Square?"
+**Add an Intro Message and Conversation Starters:**
 
-![Agent Greeting and Conversation Starters](img/agent_greeting.png)
+Customize the greeting message and provide suggested prompts to guide users. This helps them understand what the agent can do and gives them easy starting points.
 
-3. **Enable for Viewers**:
-   - Go to **Map Settings**
-   - Enable **AI Agent on Map** for viewers
+*See [`agent/intro-message.md`](agent/intro-message.md) for the example intro message and conversation starters*
 
-4. **Preview**: Test in **Preview mode** to see the end-user experience
+![Agent Intro Message Configuration](img/agent_intro_message.png)
 
-5. **Share**: Share the map with your team or stakeholders
+**Enable for Viewers:**
+- Go to **Map Settings**
+- Enable **AI Agent on Map** for viewers
+
+**Preview and Share:**
+- Test in **Preview mode** to see the end-user experience
+- Share the map with your team or stakeholders
 
 Your CARTO AI Agent is now ready! Users can interact with it directly on the map to analyze NYC's congestion pricing impact.
 
