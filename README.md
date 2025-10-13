@@ -219,6 +219,8 @@ Select the language model that will power your agent:
    - Oracle
    - Databricks
 
+![Agent Model Selection](img/agent_model.png)
+
 #### 2. Add Custom MCP Tools
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
