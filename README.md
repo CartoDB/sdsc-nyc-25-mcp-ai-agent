@@ -173,7 +173,7 @@ The first step is to enable CARTO AI in your organization. To do so navigate to 
 1. Go to the **AI Agents** section in your CARTO workspace
    - This is where you'll see all AI Agents available in your CARTO organization
 2. Click **Create AI Agent**
-3. Select **Create New Map** (since we don't have an existing map yet)
+3. Select **Create New Map** (since we don't have an existing map yet to cover this use case)
 
 
 ![Create Map for Agent](img/create_map_for_agent.png)
