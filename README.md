@@ -253,6 +253,8 @@ The instructions define:
 
 *Note: Instructions support markdown and shortcuts to reference source fields and tools*
 
+![Agent Instructions Configuration](img/agent_instructions.png)
+
 #### Test Your Agent
 
 Test with queries similar to those from Step 5:
