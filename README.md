@@ -210,13 +210,12 @@ Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025). Compa
 d) Select the right **Model**
 
 - Navigate to the **Model** section
-- Select **Gemini 2.5 Pro** as the engine
-- CARTO uses **CARTO Managed Models** by default for easy setup
-- As an Admin, you can configure your own vetted models from Google and OpenAI providers. 
+- CARTO uses **CARTO Managed Models** by default but you can also configure your own models in CARTO AI settings. 
+- In our case, will select **gemini-2.5-pro** 
 
 ![Agent Model Selection](img/agent_model.png)
 
-e) Add custom **MCP tools** to your Agent
+e) Add the **MCP tools** we created previous steps to your Agent
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
