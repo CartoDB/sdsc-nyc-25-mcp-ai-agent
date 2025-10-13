@@ -195,7 +195,7 @@ Style the layers as desired (e.g., style collisions by `carto_point_density` for
 
 a) Navigate to the **AI Agent** tab in your map
 
-b) Click **Create an Agent**
+b) Click **Create an Agent**, the Agent Configuration appears so you can configure your AI Agent. 
 
 ![Agent Creation Dialog](img/agent_creation.png)
 
