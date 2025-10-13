@@ -156,15 +156,21 @@ Once the CARTO MCP Server is configured and connected, try asking your AI agent 
 
 Now that you've tested your MCP tools with external AI agents, let's create a CARTO AI Agent for an integrated map-based experience.
 
-#### Create a Map with Data Sources
+#### Navigate to AI Agents and Create a New Map
 
-1. Create a new map in CARTO Builder
-2. Add the following NYC data sources:
+1. Go to the **AI Agents** section in your CARTO workspace
+   - This is where you'll see all AI Agents available in your CARTO organization
+2. Click **Create AI Agent**
+3. Select **Create a new map** (since we don't have an existing map yet)
+
+#### Add Data Sources to Your Map
+
+1. Add the following NYC data sources to your map:
    - **Collisions**: NYC traffic collision data
    - **Air Quality**: NYC air quality measurements
    - **Congestion**: NYC traffic volume data
    - **NYC Congestion Zone**: NYC congestion pricing zone boundaries
-3. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
+2. Style the layers as desired (e.g., by `carto_point_density` for better visualization)
 
 ![Create Map for Agent](img/create_map_for_agent.png)
 
