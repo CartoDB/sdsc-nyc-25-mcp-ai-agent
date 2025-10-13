@@ -284,7 +284,9 @@ Once you're happy with how the agent works, you can share the map:
 - **Your organization**: Make it available to everyone in your CARTO organization
 - **Public**: Make the map publicly accessible
 
-Your CARTO AI Agent is now ready! Users can interact with it directly on the map to analyze NYC's congestion pricing impact.
+Your CARTO AI Agent is now ready to use!
+
+In this example, we asked about "traffic around Empire State Building". You can see the agent's analysis results and the area of interest that was taken into account, displayed as a new AI-generated layer on the map.
 
 ![Agent Result Example](img/agent_result.png)
 
