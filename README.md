@@ -161,14 +161,15 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 1. Go to the **AI Agents** section in your CARTO workspace
    - This is where you'll see all AI Agents available in your CARTO organization
 2. Click **Create AI Agent**
+3. Select **Create New Map** (since we don't have an existing map yet)
+
 
 ![Create Map for Agent](img/create_map_for_agent.png)
 
-3. Select **Create a new map** (since we don't have an existing map yet)
 
 **2. Add Data Sources to Your Map**
 
-Add the following NYC data sources to your map:
+In your map, provide a title `Analyzing the impact of NYC Congestion Pricing Program`and add the following NYC data sources located in CARTO Data Warehouse > demo data > demo_tables:
 - **Collisions**: NYC traffic collision data
 - **Air Quality**: NYC air quality measurements
 - **Congestion**: NYC traffic volume data
@@ -178,7 +179,7 @@ Style the layers as desired (e.g., by `carto_point_density` for better visualiza
 
 ![Add Data Sources and Style Layers](img/agent_add_source_style_layers.png)
 
-**3. Create the AI Agent**
+**3. Create and configure your AI Agent**
 
 1. Navigate to the **AI Agent** tab in your map
 2. Click **Create an Agent**
@@ -198,11 +199,7 @@ a data-driven narrative showing the regulation's spatial effects.
 
 ![Agent Use Case Configuration](img/agent_use_case.png)
 
-**4. Configure the Agent**
-
-The AI Agent configuration panel opens with several sections:
-
-**a) Select the LLM Model**
+5. Select the right **model**
 
 - Navigate to the **Model** section
 - Select **Gemini 2.5 Pro** as the engine
@@ -211,7 +208,7 @@ The AI Agent configuration panel opens with several sections:
 
 ![Agent Model Selection](img/agent_model.png)
 
-**b) Add Custom MCP Tools**
+6. Add custom **MCP tools** to your Agent
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
@@ -224,7 +221,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
 
 ![Add MCP Tools to Agent](img/agent_add_mcp_tool.png)
 
-**c) Configure Agent Instructions**
+7. Provide **Instructions**
 
 Define the analytical workflow and behavior for your agent:
 
@@ -238,7 +235,7 @@ The instructions define communication style, analytical workflow for different i
 
 ![Agent Instructions Configuration](img/agent_instructions.png)
 
-**5. Test Your Agent**
+**4. Test Your Agent**
 
 Now you can start testing your agent in **Editor mode** before enabling it on Preview and publishing your map. Try queries like:
 
@@ -251,7 +248,7 @@ Now you can start testing your agent in **Editor mode** before enabling it on Pr
 
 ![Agent Testing](img/agent_testing.png)
 
-**6. Finalize and Share**
+**5. Finalize and Share**
 
 Open the **AI Agent Configuration** to customize the intro message and conversation starters that help users get started with your agent.
 
