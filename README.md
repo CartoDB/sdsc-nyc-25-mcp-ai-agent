@@ -156,7 +156,7 @@ Once the CARTO MCP Server is configured and connected, try asking your AI agent 
 
 Now that you've tested your MCP tools with external AI agents, let's create a CARTO AI Agent for an integrated map-based experience.
 
-#### Create a Map with Data Layers
+#### Create a Map with Data Sources
 
 1. Create a new map in CARTO Builder
 2. Add the following NYC data sources:
