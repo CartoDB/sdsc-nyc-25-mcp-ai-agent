@@ -162,7 +162,13 @@ Once the CARTO MCP Server is configured and connected, try asking your AI agent 
 
 Now that you've tested your MCP tools with external AI agents, let's create a CARTO AI Agent for an integrated map-based experience.
 
-**1. Navigate to AI Agents and Create a New Map**
+**1. Enable CARTO AI in your organization**
+
+The first step is to enable CARTO AI in your organization. To do so navigate to `Settings > CARTO AI` and enable CARTO AI in your organization. 
+
+
+
+**2. Navigate to AI Agents and Create a New Map**
 
 1. Go to the **AI Agents** section in your CARTO workspace
    - This is where you'll see all AI Agents available in your CARTO organization
@@ -173,7 +179,7 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 ![Create Map for Agent](img/create_map_for_agent.png)
 
 
-**2. Add Data Sources to Your Map**
+**3. Add Data Sources to Your Map**
 
 In your map, provide a title `Analyzing the impact of NYC Congestion Pricing Program`and add the following NYC data sources located in CARTO Data Warehouse > demo data > demo_tables:
 - **Collisions**: NYC traffic collision data
@@ -185,7 +191,7 @@ Style the layers as desired (e.g., by `carto_point_density` for better visualiza
 
 ![Add Data Sources and Style Layers](img/agent_add_source_style_layers.png)
 
-**3. Create and configure your AI Agent**
+**4. Create and configure your AI Agent**
 
 The AI Agent configuration panel opens with several sections to configure:
 
@@ -210,7 +216,7 @@ e) Select the right **Model**
 - Navigate to the **Model** section
 - Select **Gemini 2.5 Pro** as the engine
 - CARTO uses **CARTO Managed Models** by default for easy setup
-- As an Admin, you can configure custom models from various providers (Google, OpenAI, Snowflake Cortex, AWS Bedrock, Anthropic, Oracle, Databricks)
+- As an Admin, you can configure your own vetted models from Google and OpenAI providers. 
 
 ![Agent Model Selection](img/agent_model.png)
 
@@ -241,7 +247,7 @@ The instructions define communication style, analytical workflow for different i
 
 ![Agent Instructions Configuration](img/agent_instructions.png)
 
-**4. Test Your Agent**
+**5. Test Your Agent**
 
 Now you can start testing your agent in **Editor mode** before enabling it on Preview and publishing your map. Try queries like:
 
@@ -254,7 +260,7 @@ Now you can start testing your agent in **Editor mode** before enabling it on Pr
 
 ![Agent Testing](img/agent_testing.png)
 
-**5. Finalize and Share**
+**6. Finalize and Share**
 
 Open the **AI Agent Configuration** to customize the intro message and conversation starters that help users get started with your agent.
 
