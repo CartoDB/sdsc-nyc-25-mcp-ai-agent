@@ -246,10 +246,10 @@ g) Once you're done, click on **Create Agent**
 
 Now you can start testing your agent in **Editor mode** before enabling it on Preview and publishing your map. Try queries like:
 
-- "Analyze traffic changes around the Empire State Building"
 - "What's the traffic impact in the area I've drawn?"
 - "Show me the congestion impact for the current map view"
 - "How did traffic patterns change in Times Square?"
+- "Analyze traffic changes around the Empire State Building"
 
 *See [`agent/test-prompts.md`](agent/test-prompts.md) for more test queries*
 
