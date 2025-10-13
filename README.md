@@ -181,7 +181,7 @@ The first step is to enable CARTO AI in your organization. To do so navigate to 
 
 **3. Add Data Sources and prepare Layers**
 
-In your map, provide a title `Analyzing the impact of NYC Congestion Pricing Program`and add the following NYC data sources located in CARTO Data Warehouse > demo data > demo_tables:
+In your map, provide a title `Analyzing the impact of NYC Congestion Pricing Program`and add the following NYC data sources located in `CARTO Data Warehouse > demo data > demo_tables`:
 - **Collisions**: NYC traffic collision data
 - **Air Quality**: NYC air quality measurements
 - **Congestion**: NYC traffic volume data
