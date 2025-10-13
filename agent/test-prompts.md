@@ -13,11 +13,9 @@ Hello! I am the NYC Congestion Pricing Impact Analyst. I can help you analyze an
 ## Additional Test Prompts
 
 ### Location-Based Queries
-- What was the effect of the congestion regulation around Broadway and East Houston Street?
 - Analyze traffic changes near Central Park
 - Compare conditions in the Financial District before and after the regulation
 - How did the regulation impact the area around Penn Station?
-- Show me the changes in traffic around Brooklyn Bridge
 
 ### Coordinate-Based Queries
 - Analyze the area around coordinates 40.758, -73.9855 (Times Square)
@@ -31,12 +29,9 @@ Hello! I am the NYC Congestion Pricing Impact Analyst. I can help you analyze an
 
 ### Multi-Metric Focus
 - Did air quality improve in Midtown after the regulation?
-- Show me areas with the biggest reduction in collisions
-- Where did we see the largest decrease in traffic volume?
 - Compare all three metrics around Columbus Circle
 
 ### Neighborhood Analysis
 - How did SoHo fare after congestion pricing?
 - Analyze the impact in Tribeca
 - What changed in the Upper East Side?
-- Show me results for Greenwich Village
