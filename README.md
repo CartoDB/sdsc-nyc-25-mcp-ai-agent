@@ -184,11 +184,9 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 1. Navigate to the **AI Agent** tab in your map
 2. Click **Create an Agent**
 
-The AI Agent configuration panel opens with several sections to configure:
+![Agent Creation Dialog](img/agent_creation.png)
 
-#### 1. Define the Use Case
-
-Provide the **Use Case** that describes what your agent does:
+3. Provide the **Use Case** that describes what your agent does:
 
 ```
 Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025).
@@ -199,13 +197,15 @@ a data-driven narrative showing the regulation's spatial effects.
 
 *See [`agent/use-case.md`](agent/use-case.md) for the complete use case text*
 
-Click **Create an AI Agent** to proceed with the configuration.
+4. Click **Create an AI Agent** to proceed with the configuration
 
 ![Agent Use Case Configuration](img/agent_use_case.png)
 
-#### 2. Select the LLM Model
+The AI Agent configuration panel opens with several sections to configure:
 
-The first configuration step is selecting the language model that will power your agent:
+#### 1. Select the LLM Model
+
+Select the language model that will power your agent:
 
 1. Navigate to the **Model** section
 2. Select **Gemini 2.5 Pro** as the engine
@@ -219,7 +219,7 @@ The first configuration step is selecting the language model that will power you
    - Oracle
    - Databricks
 
-#### 3. Add Custom MCP Tools
+#### 2. Add Custom MCP Tools
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
@@ -235,7 +235,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
 
 ![Agent Configuration with MCP Tools](img/agent_configuration.png)
 
-#### 4. Configure Agent Instructions
+#### 3. Configure Agent Instructions
 
 Finally, define the analytical workflow and behavior for your agent:
 
