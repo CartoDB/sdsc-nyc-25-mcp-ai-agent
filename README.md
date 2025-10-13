@@ -223,7 +223,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
 - Search for your MCP tools available in the organization
 - Add these tools:
   - `create_area_from_coordinates`
-  - `nyc_traffic_analysis_compact_version`
+  - `nyc_traffic_analysis_compact`
 - Inspect each tool's metadata (description, input parameters, output definitions)
 
 ![Add MCP Tools to Agent](img/agent_add_mcp_tool.png)
