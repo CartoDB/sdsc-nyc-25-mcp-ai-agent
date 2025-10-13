@@ -181,12 +181,13 @@ Style the layers as desired (e.g., by `carto_point_density` for better visualiza
 
 **3. Create and configure your AI Agent**
 
-1. Navigate to the **AI Agent** tab in your map
-2. Click **Create an Agent**
+a) Navigate to the **AI Agent** tab in your map
+
+b) Click **Create an Agent**
 
 ![Agent Creation Dialog](img/agent_creation.png)
 
-3. Provide the **Use Case** that describes what your agent does:
+c) Provide the **Use Case** that describes what your agent does:
 
 ```
 Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025).
@@ -195,11 +196,11 @@ vs after (Jan-June 2025). Quantify changes in all three metrics and create
 a data-driven narrative showing the regulation's spatial effects.
 ```
 
-4. Click **Create an AI Agent** to proceed with the configuration
+d) Click **Create an AI Agent** to proceed with the configuration
 
 ![Agent Use Case Configuration](img/agent_use_case.png)
 
-5. Select the right **model**
+e) Select the right **model**
 
 - Navigate to the **Model** section
 - Select **Gemini 2.5 Pro** as the engine
@@ -208,7 +209,7 @@ a data-driven narrative showing the regulation's spatial effects.
 
 ![Agent Model Selection](img/agent_model.png)
 
-6. Add custom **MCP tools** to your Agent
+f) Add custom **MCP tools** to your Agent
 
 Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
@@ -221,7 +222,7 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
 
 ![Add MCP Tools to Agent](img/agent_add_mcp_tool.png)
 
-7. Provide **Instructions**
+g) Provide **Instructions**
 
 Define the analytical workflow and behavior for your agent:
 
