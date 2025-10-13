@@ -179,24 +179,49 @@ Now that you've tested your MCP tools with external AI agents, let's create a CA
 
 ![Add Data Sources and Style Layers](img/agent_add_source_style_layers.png)
 
-#### Create the AI Agent
+#### Configure the AI Agent
 
 1. Navigate to the **AI Agent** tab in your map
 2. Click **Create an Agent**
-3. In the configuration panel, provide the **Use Case**:
-   ```
-   Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025).
-   Compare traffic volume, accidents, and air quality before (June-Dec 2024)
-   vs after (Jan-June 2025). Quantify changes in all three metrics and create
-   a data-driven narrative showing the regulation's spatial effects.
-   ```
-   *See [`agent/use-case.md`](agent/use-case.md)*
 
-4. Click **Create an AI Agent**
+The AI Agent configuration panel opens with several sections to configure:
 
-#### Add Your Custom MCP Tools
+#### 1. Define the Use Case
 
-Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom MCP tools you created in Steps 2-3:
+Provide the **Use Case** that describes what your agent does:
+
+```
+Analyze NYC's congestion pricing regulation impact (launched Jan 5, 2025).
+Compare traffic volume, accidents, and air quality before (June-Dec 2024)
+vs after (Jan-June 2025). Quantify changes in all three metrics and create
+a data-driven narrative showing the regulation's spatial effects.
+```
+
+*See [`agent/use-case.md`](agent/use-case.md) for the complete use case text*
+
+Click **Create an AI Agent** to proceed with the configuration.
+
+![Agent Use Case Configuration](img/agent_use_case.png)
+
+#### 2. Select the LLM Model
+
+The first configuration step is selecting the language model that will power your agent:
+
+1. Navigate to the **Model** section
+2. Select **Gemini 2.5 Pro** as the engine
+3. CARTO uses **CARTO Managed Models** by default for easy setup
+4. As an Admin, you can configure custom models from various providers:
+   - Google (Gemini)
+   - OpenAI
+   - Snowflake Cortex
+   - AWS Bedrock
+   - Anthropic
+   - Oracle
+   - Databricks
+
+#### 3. Add Custom MCP Tools
+
+Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/ai-agents/core-tools) by default. Now add the custom **Workflows as MCP Tools** you created in Steps 2-3:
 
 1. Click **Add tools** in the agent configuration
 2. Search for your MCP tools available in the organization
@@ -208,11 +233,11 @@ Your agent has access to [core tools](https://docs.carto.com/carto-user-manual/a
    - Input parameters
    - Output definitions
 
-![Agent Configuration](img/agent_configuration.png)
+![Agent Configuration with MCP Tools](img/agent_configuration.png)
 
-#### Configure Agent Instructions
+#### 4. Configure Agent Instructions
 
-Define the analytical workflow and behavior for your agent:
+Finally, define the analytical workflow and behavior for your agent:
 
 1. Navigate to the **Instructions** section
 2. Copy the content from [`agent/instructions.md`](agent/instructions.md)
@@ -225,20 +250,6 @@ The instructions define:
 - Handling missing or incomplete data
 
 *Note: Instructions support markdown and shortcuts to reference source fields and tools*
-
-#### Select the LLM Model
-
-1. Navigate to the **Model** section
-2. Select **Gemini 2.5 Pro** as the engine
-3. CARTO uses CARTO Managed Models by default
-4. Admins can configure custom models from:
-   - Google (Gemini)
-   - OpenAI
-   - Snowflake Cortex
-   - AWS Bedrock
-   - Anthropic
-   - Oracle
-   - Databricks
 
 #### Test Your Agent
 
