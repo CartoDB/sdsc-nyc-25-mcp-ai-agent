@@ -68,11 +68,13 @@ Discover how CARTO AI Agents provide a map-based interface for geospatial analys
 1. Log in to your CARTO account
 2. Navigate to the Workflows section
 3. Ensure you have access to the required NYC datasets through the CARTO Data Warehouse:
-   - Traffic count data
-   - Traffic accident/collision data
-   - Air quality measurements
+   - Traffic count data in `carto-demo-data.demo_tables.nyc_traffic_counts`.
+   - Traffic accident/collision data in `carto-demo-data.demo_tables.nyc_collisions`.
+   - Air quality measurements in `carto-demo-data.demo_tables.nyc_air_quality`.
 
 ### Step 2: Create the Workflows
+
+Create your workflows by drag and drop the files in `/workflows` in this repository in the Workflows section in your CARTO account. 
 
 #### Extended Analysis Workflow (Asynchronous)
 
@@ -116,6 +118,13 @@ For each workflow created:
 
 ### Step 4: Configure CARTO MCP Server
 
+In order to configure your MCP client you will need a couple of things from your CARTO account: 
+
+* **Get your MCP Server URL:** In your CARTO Workspace, go to _Developers_ and find _Workflow API & MCP Server_
+* **Create an API Access Token with the MCP Tool grant:** In _Developers_ go to _Credentials_ and click on _+ Create new_  
+
+Find more detailed instructions in [this documentation](https://docs.carto.com/carto-mcp-server/carto-mcp-server#create-an-api-access-token).
+
 Add the CARTO MCP Server to your AI agent's configuration to access the tools:
 
 **Generic configuration** (compatible with Claude and Gemini CLI)
@@ -140,9 +149,6 @@ $ gemini mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -
 ```
 $ claude mcp add carto-mcp-server https://your-carto-instance.com/mcp/<org_id> -t http -H 'Authorization: Bearer <api_access_token>'
 ```
-
-* **Get your MCP Server URL:** In your CARTO Workspace, go to _Developers_ and find _Workflow API & MCP Server_
-* **Create an API Access Token with the MCP Tool grant:** Follow [this documentation](https://docs.carto.com/carto-mcp-server/carto-mcp-server#create-an-api-access-token).
 
 ### Step 5: Test with External AI Agents
 
